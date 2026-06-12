@@ -1,4 +1,4 @@
-# Request for Contribution (RFC): Dust Bin (mechanical module)
+# Dust Bin (mechanical module)
 
 This is a removable dust bin that collects dust, contains an air filter and receives air from the vacuum robot's master fan.
 
@@ -11,9 +11,9 @@ The dust bin lock is spring loaded with a retractable latch on top. The dust bin
 - [Discord server](https://discord.gg/3y2JKz5T25)
 
 ### Assembled vacuum, no top - back
-![Teardown reference vacuum - no top, back](../../blob/main/assets/vacuum-no-top-back.webp)
+![Teardown reference vacuum - no top, back](../../assets/vacuum-no-top-back.webp)
 
-# Instructions
+# Request for Contribution - Instructions
 
 - review the teardown master assembly
 - start with the teardown reference STEP file
@@ -47,13 +47,13 @@ The dust bin lock is spring loaded with a retractable latch on top. The dust bin
 please post your raionale in [discussions](https://github.com/makerspet/oomwoo/discussions?discussions_q=).
 
 ### Dust bin - back
-![Teardown reference dust bin - back](../../blob/main/assets/dust-bin-back.webp)
+![Teardown reference dust bin - back](../../assets/dust-bin-back.webp)
 
 ### Dust bin - front
-![Teardown reference dust bin - front](../../blob/main/assets/dust-bin-front.webp)
+![Teardown reference dust bin - front](../../assets/dust-bin-front.webp)
 
 ### Assembled vacuum - back
-![Teardown reference vacuum - back](../../blob/main/assets/vacuum_model_top.webp)
+![Teardown reference vacuum - back](../../assets/vacuum_model_top.webp)
 
 ## Acceptance criteria
 
