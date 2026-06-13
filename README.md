@@ -68,7 +68,7 @@ oomwoo is organized to built by the community, massively **in parallel**.
 The vacuum and its software are subdivided into [modules](#requests-for-contributions), see list below.
 
 A volunteer picks whatever module she wants, works on that module whenever she wants,
-submits her contribution as a PR under contibutions/module_name/github_username.
+submits her contribution as a PR under contibutions/module-name/<her-github-username>.
 
 Multiple developers are welcome to work on the same module.
 The best solution for each module surfaces for over time, with the project master having the last call.
