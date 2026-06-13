@@ -7,7 +7,7 @@ URDF (robot definition file) - a simplified URDF with Gazebo simulation.
 - [Template ROS2 package](https://github.com/makerspet/makerspet_mini])
 - [Gazebo simulation instructions](https://makerspet.com/blog/tutorial-map-navigate-ros2-robot-in-simulation/)
 - [Development environment template instructions](https://makerspet.com/blog/build-arduino-self-driving-robot-video-instructions/)
-- [oomwoo ROS2 development](https://github.com/kaiaai/oomwoo-ros2)
+- [oomwoo ROS2 development](https://github.com/makerspet/oomwoo-install)
 - [Project discussions](https://github.com/makerspet/oomwoo/discussions?discussions_q=)
 - [Discord server](https://discord.gg/3y2JKz5T25)
 
@@ -18,13 +18,13 @@ URDF (robot definition file) - a simplified URDF with Gazebo simulation.
 
 - review the [teardown master assembly](https://github.com/remakeai/vacuum_cleaner_teardown/blob/main/step/MASTER-ASSM.stp)
   - measure the robot's outer dimensions, track distance, wheels outer diameter, wheels coordinates, LiDAR coordinates and orientation and so on
-- review the [template ROS2 package](https://github.com/makerspet/makerspet_mini])
+- review the [template ROS2 package](https://github.com/makerspet/oomwoo_urdf])
+  - I've cloned the template package
   - this package has been tested, should be reused to minimize development
-  - clone the package
   - modify URDF to match the reference vacuum cleaner
 - review, reproduce [Gazebo Simulation Instructions](https://makerspet.com/blog/tutorial-map-navigate-ros2-robot-in-simulation/)
   - review [development environment setup instructions](https://makerspet.com/blog/build-arduino-self-driving-robot-video-instructions/)
-  - use this [oomwoo ROS2 development](https://github.com/kaiaai/oomwoo-ros2) to build oomwoo ROS2 Docker image(s) with your packages
+  - use this [oomwoo ROS2 development](https://github.com/makerspet/oomwoo-install) to build oomwoo ROS2 Docker image(s) with your packages
 - test it well
   - verify Nav2 SLAM works, does not get stuck in the Living Room world
 - submit a PR (pull request) to `contributions/urdf-gazebo-sim/<your-github-username>/`
