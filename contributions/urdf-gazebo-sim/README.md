@@ -2,15 +2,6 @@
 
 URDF (robot definition file) - a simplified URDF with Gazebo simulation.
 
-# Important References
-- [Teardown master assembly](https://github.com/remakeai/vacuum_cleaner_teardown/blob/main/step/MASTER-ASSM.stp)
-- [Template ROS2 package](https://github.com/makerspet/makerspet_mini])
-- [Gazebo simulation instructions](https://makerspet.com/blog/tutorial-map-navigate-ros2-robot-in-simulation/)
-- [Development environment template instructions](https://makerspet.com/blog/build-arduino-self-driving-robot-video-instructions/)
-- [oomwoo ROS2 development](https://github.com/makerspet/oomwoo-install)
-- [Project discussions](https://github.com/makerspet/oomwoo/discussions?discussions_q=)
-- [Discord server](https://discord.gg/3y2JKz5T25)
-
 ### Assembled vacuum, no top - back
 ![Teardown reference vacuum - no dock, front](../../assets/vacuum-no-dock-front.webp)
 
