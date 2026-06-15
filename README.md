@@ -91,7 +91,13 @@ Follow us building in public:
 | Module | ID | Phase | Notes |
 |---|---|---|---|
 | ROS2 URDF + Gazebo sim | [urdf-gazebo-sim](./contributions/urdf-gazebo-sim) | Ready to start work | Design URDF, TF, bumper, simulate in Gazebo |
-| First clean: coverage + mapping + exploration | [clean-and-map](./contributions/clean-and-map) | Ready to start work | Coverage cleaning while SLAM-mapping and exploring, in Gazebo |
+| First clean: coverage + mapping + exploration | [clean-and-map](./contributions/clean-and-map) | Blocked by urdf-gazebo-sim | Coverage cleaning while SLAM-mapping and exploring, in Gazebo |
+| Localization & navigation on a known map | [nav-localize](./contributions/nav-localize) | Blocked by urdf-gazebo-sim, clean-and-map | Nav2 nav, AMCL localization, relocalize when lost, resume map |
+| Dock cycle: undock, dock, recharge | [dock-cycle](./contributions/dock-cycle) | Blocked by urdf-gazebo-sim, nav-localize | Undock, return-to-dock, precise docking, station services, find dock when lost |
+| Recovery behaviors & safety | [recovery-safety](./contributions/recovery-safety) | Blocked by urdf-gazebo-sim | Recovery ladder, escalation, pause-and-alert, safety sensors, status reporting |
+| Floor-surface handling & edge cleaning | [floor-care](./contributions/floor-care) | Blocked by urdf-gazebo-sim, clean-and-map | Wall/edge following, carpet vs hardwood, mop lift/lower |
+| Cleaning modes, zones & job orchestration | [cleaning-jobs](./contributions/cleaning-jobs) | Blocked by urdf-gazebo-sim + behaviors | Modes (regular/spot), virtual walls, room segmentation, job splitting + resume |
+| Live robot bring-up & validation | [live-robot-bringup](./contributions/live-robot-bringup) | Blocked by behaviors + needs hardware | Connect real vacuum to ROS2, re-run sim tests on hardware |
 | Dust bin 3D design | [dust-bin](./contributions/dust-bin) | Ready to start work | Design, 3D print, test dust bin |
 | Vacuum fan / blower assembly | [vacuum-fan](./contributions/vacuum-fan) | Ready to start work | Source blower motor + impeller, design volute housing + gasket |
 

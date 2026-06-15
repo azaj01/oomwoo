@@ -5,11 +5,27 @@ cleans the whole reachable floor using coverage path planning, builds a map with
 SLAM *while* it cleans, and keeps exploring until the map is complete. Because the
 physical robot isn't built yet, this is a **Gazebo simulation**.
 
+> **Status — blocked by [urdf-gazebo-sim](../urdf-gazebo-sim).**
+> This package runs on the simulated robot (URDF, world, bumper) from that RFC, so it can't
+> be *completed* until a working simulated robot exists. You're welcome to start prototyping
+> in parallel — just say so in the discussions.
+
+> **Scope.** This RFC is only the **first clean from scratch**. Operating on a *saved* map,
+> docking, recovery, floor-surface handling, and cleaning modes are deliberately **out of
+> scope** and live in their own RFCs:
+> [nav-localize](../nav-localize) (navigate / localize / resume a saved map),
+> [dock-cycle](../dock-cycle) (undock / dock / recharge),
+> [recovery-safety](../recovery-safety) (recovery & safety),
+> [floor-care](../floor-care) (wall/edge following, carpet vs hardwood, mop), and
+> [cleaning-jobs](../cleaning-jobs) (modes, zones, job orchestration).
+> Keep this package focused on producing a **complete map** and **full first-pass coverage**;
+> the others build on top of it.
+
 # Important References
+- [urdf-gazebo-sim RFC](../urdf-gazebo-sim) — provides the robot URDF, the Gazebo world(s), and the **bumper** this package depends on.
 - [m-explore-ros2 (kaiaai fork)](https://github.com/kaiaai/m-explore-ros2) — frontier exploration, tested and working. It maps and explores but does **not** clean — a good starting point to build on.
 - [m-explore-ros2 demo + step-by-step instructions (video)](https://www.youtube.com/watch?v=81-9q7QfkHs&list=PLOSXKDW70aR8uA1IFahSKVuk5ODDfjTZV) — shows m-explore-ros2 in action and how to run it.
 - [Gazebo simulation setup instructions](https://makerspet.com/blog/tutorial-map-navigate-ros2-robot-in-simulation/) — a simple differential-drive robot with a LiDAR in a Gazebo living room world; another possible starting point.
-- [urdf-gazebo-sim RFC](../urdf-gazebo-sim) — provides the robot URDF, the Gazebo world(s), and the **bumper** this package depends on.
 - [oomwoo ROS2 development](https://github.com/makerspet/oomwoo-install) — build oomwoo ROS2 Docker image(s) with your packages.
 - [Project discussions](https://github.com/makerspet/oomwoo/discussions?discussions_q=)
 - [Discord server](https://discord.gg/3y2JKz5T25)
@@ -31,7 +47,7 @@ physical robot isn't built yet, this is a **Gazebo simulation**.
   - **dynamic obstacles:** a person, pet, or object moving into the robot's path must not break coverage or mapping — the robot should replan and continue
   - **LiDAR-invisible static obstacles:** the LiDAR may report open floor the robot cannot actually reach (glass, objects below the LiDAR plane, thresholds, ledges). Detect these via **bumper** contact, mark them as obstacles, recover, and replan around them
   - react to **bumper events** (left switch, right switch, front bumper) published by the urdf-gazebo-sim bumper
-  - never get permanently stuck — recover from collisions and wedged situations
+  - never get permanently stuck — recover from collisions and wedged situations (a basic local recovery here; the full recovery ladder lives in [recovery-safety](../recovery-safety))
 - test it well
   - start the robot from **various initial locations** and verify it still achieves full coverage and a complete map
   - add **regression tests** (headless, CI-friendly) that verify both:
