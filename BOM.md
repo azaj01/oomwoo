@@ -7,7 +7,7 @@
 >
 > Rationale and design decisions behind these choices live in
 > [docs/design-document.md](docs/design-document.md). Interfaces live in
-> [ARCHITECTURE.md](ARCHITECTURE.md).
+> [ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
 ## Budget target
 

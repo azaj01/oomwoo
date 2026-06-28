@@ -29,7 +29,7 @@ robot application platform. Architectural boundaries (especially the app layer i
 - **Safety is reviewed, not crowd-trusted.** Battery, charging, and motor-driver
   modules pass a maintainer safety review before merge (see §8).
 - **Reference-design backed.** A known-working vacuum (see the references in the
-  [README](README.md)) anchors the geometry and proves feasibility.
+  [README](../README.md)) anchors the geometry and proves feasibility.
 
 ## 3. System overview
 

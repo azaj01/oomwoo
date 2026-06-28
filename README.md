@@ -48,7 +48,7 @@ Reference design images - this is approximately how the finished design will loo
 
 Open Source Deliverables:
 
-- [ ] [Bill of materials (BoM)](BoM.md)
+- [ ] [Bill of materials (BoM)](BOM.md)
 - [ ] 3D-printable files
 - [ ] ROS2 packages
 - [ ] Firmware
@@ -61,7 +61,7 @@ Open Source Deliverables:
 > **Status: design / RFC stage.** Step-by-step build instructions don't exist yet —
 > they arrive once the first BoM and parts are validated (**first BoM targeted ~mid-July**).
 
-- 📋 **[Bill of Materials (BoM)](BoM.md)** — work-in-progress parts list + budget target
+- 📋 **[Bill of Materials (BoM)](BOM.md)** — work-in-progress parts list + budget target
 - 🛠️ **[Build Instructions](BUILD_INSTRUCTIONS.md)** — placeholder for now; how to follow along
 
 Full build docs and a complete BoM are on the way, with the goal that you can
@@ -82,7 +82,7 @@ The best solution for each module surfaces for over time, with the project maste
 
 1. Pick a contribution from the [list below](#requests-for-contributions).
 2. [Let us know](https://github.com/makerspet/oomwoo/discussions) you're working on it and your progress.
-3. Check [ARCHITECTURE.md](ARCHITECTURE.md) for the system design and interfaces.
+3. Check [ARCHITECTURE.md](docs/ARCHITECTURE.md) for the system design and interfaces.
 4. Say hi on [Discord](https://discord.gg/3y2JKz5T25)
 
 Follow us building in public:
