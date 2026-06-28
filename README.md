@@ -48,22 +48,28 @@ Reference design images - this is approximately how the finished design will loo
 
 Open Source Deliverables:
 
-- [ ] Bill of materials (BOM)
+- [ ] [Bill of materials (BoM)](BoM.md)
 - [ ] 3D-printable files
 - [ ] ROS2 packages
 - [ ] Firmware
 - [ ] Motor drivers and sensors PCB
-- [ ] Build, setup, bringup and troubleshooting instructions
+- [ ] [Build, setup, bringup and troubleshooting instructions](BUILD_INSTRUCTIONS.md)
 - [ ] Demo video(s)
 
 ## Build one
 
-Full build docs and a complete BOM are on the way, with the goal that you can
+> **Status: design / RFC stage.** Step-by-step build instructions don't exist yet —
+> they arrive once the first BoM and parts are validated (**first BoM targeted ~mid-July**).
+
+- 📋 **[Bill of Materials (BoM)](BoM.md)** — work-in-progress parts list + budget target
+- 🛠️ **[Build Instructions](BUILD_INSTRUCTIONS.md)** — placeholder for now; how to follow along
+
+Full build docs and a complete BoM are on the way, with the goal that you can
 source every part yourself.
 
 ## Contributing
 
-Would you like to contribute?
+Would you like to contribute? See [CONTRIBUTING](docs/CONTRIBUTING.md) for the full guide.
 
 oomwoo is organized to built by the community, massively **in parallel**.
 The vacuum and its software are subdivided into [modules](#requests-for-contributions), see list below.
@@ -152,6 +158,8 @@ flowchart TD
 | Live robot bring-up & validation | [live-robot-bringup](./contributions/live-robot-bringup) | Blocked by behaviors + needs hardware | Connect real vacuum to ROS2, re-run sim tests on hardware |
 | Dust bin 3D design | [dust-bin](./contributions/dust-bin) | Ready to start work | Design, 3D print, test dust bin |
 | Vacuum fan / blower assembly | [vacuum-fan](./contributions/vacuum-fan) | Ready to start work | Source blower motor + impeller, design volute housing + gasket |
+
+> The full granular module list lives in [docs/RFC_MASTER_LIST.md](docs/RFC_MASTER_LIST.md).
 
 ## Source code reference
 

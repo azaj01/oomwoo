@@ -1,7 +1,7 @@
 # oomwoo Design Document
 
 > **Working design doc.** This accumulates research-backed design decisions before
-> they're split into per-module [RFCs](../RFC_MASTER_LIST.md) and/or migrated into
+> they're split into per-module [RFCs](RFC_MASTER_LIST.md) and/or migrated into
 > the [README](../README.md). A condensed version of §1 already lives in the
 > README's [Design research](../README.md#design-research) section. Expect this to
 > grow as remaining components are researched.

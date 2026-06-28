@@ -6,7 +6,7 @@ The project is split into modules that can be built in parallel.
 - Users try out contributions and the best ones surface over time.
 - The repo maintainer makes the final call which to include in the official kit(s).
 - Modules are **swappable** — a non-selected design is valuable a valid learning exercise, an alternative implementation or a fallback.
-- Design choices follow the [design research](README.md#design-research) — what makes vacuum users happy.
+- Design choices follow the [design research](../README.md#design-research) — what makes vacuum users happy.
 
 **Phase legend:** `MVP` = needed for the Aug 31 2026 bare-bones build ·
 `P2` = next phase · `P3+` = later. **Safety** = requires maintainer safety review.
