@@ -150,9 +150,33 @@ ros2 run oomwoo_gazebo bump_recovery.py
 - [x] Automatic collision recovery node
 - [x] Keyboard control (teleop)
 - [x] Nav2 + SLAM parameters configured
-- [ ] Nav2 SLAM works in Living Room world (requires runtime testing)
-- [ ] Map saved successfully (requires runtime testing)
-- [ ] Nav2 navigation works using saved map (requires runtime testing)
+- [x] Nav2 stack nodes all configure successfully (11 nodes tested)
+- [x] SLAM Toolbox node launches with config
+- [ ] Nav2 SLAM works in Living Room world (requires GPU for LiDAR sensor data)
+- [ ] Map saved successfully (requires GPU for LiDAR sensor data)
+- [ ] Nav2 navigation works using saved map (requires GPU for LiDAR sensor data)
+
+### Known Issues
+
+| Issue | Status |
+|-------|--------|
+| GPU LiDAR sensor needs hardware GPU or Mesa software rendering for range data | Blocked in headless Docker (macOS) |
+| Bumper contact bridge: `gz.msgs.Contacts` → `ros_gz_interfaces/msg/Contact` has no template specialization | Pending fix — use alternate message type |
+| `gravity` element under `physics` in SDF 1.8 is deprecated (should be under `world`) | Cosmetic warning only |
+
+### Testing Results (Docker, osrf/ros:jazzy-desktop)
+
+| Component | Result |
+|-----------|--------|
+| Gazebo server loads living_room.sdf | ✅ |
+| Robot spawns (`ros_gz_sim create`) | ✅ |
+| robot_state_publisher publishes /tf, /joint_states | ✅ |
+| parameter_bridge bridges /odom, /scan, /cmd_vel, /clock | ✅ |
+| Odometry data flows to ROS2 | ✅ |
+| SLAM Toolbox async_slam_toolbox_node starts | ✅ |
+| Nav2 bringup — all 11 nodes configure | ✅ |
+| LiDAR scan topic exists in Gazebo but no data | ❌ Needs GPU |
+| Bumper topics bridged | ⚠️ Type mismatch |
 
 ## License
 

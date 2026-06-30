@@ -14,7 +14,7 @@ oomwoo_gazebo/
 │   └── plugins.xacro      # Gazebo plugins (diff-drive, lidar, bumpers)
 ├── config/                 # ROS2 + Gazebo configuration
 │   ├── gz_bridge.yaml     # Topic bridges between ROS2 and Gazebo
-│   ├── navigation.yaml    # Nav2 stack parameters
+│   ├── navigation.yaml    # Nav2 stack parameters (controller, planner, costmaps, collision_monitor, docking)
 │   ├── slam_toolbox.yaml  # SLAM Toolbox configuration
 │   ├── map.yaml           # Nav2 placeholder map metadata
 │   └── map.pgm            # Nav2 placeholder map image
@@ -59,6 +59,11 @@ ros2 launch oomwoo_gazebo sim.launch.py world:=/path/to/kitchen.sdf
 ros2 launch oomwoo_gazebo teleop.launch.py
 ```
 
+> **Note:** The LiDAR sensor (`gpu_lidar`) requires hardware GPU for range data.
+> In headless environments without GPU (e.g., Docker on macOS), the scan topic
+> is created but no data is published. For full SLAM/Nav2 testing, run with a
+> display or GPU-accelerated VM.
+
 ## Bumper
 
 The front bumper is split into left and right segments, each with its own Gazebo contact sensor:
@@ -96,6 +101,9 @@ Provide a pre-built map or launch SLAM first to generate one, then:
 ros2 launch oomwoo_gazebo nav2.launch.py map:=/path/to/your/map.yaml
 ```
 
+The Nav2 bringup includes: controller, planner, smoother, behavior server, BT navigator,
+velocity smoother, collision monitor, docking server, waypoint follower, and route server.
+
 ## Worlds
 
 | World             | Description                    |
@@ -106,9 +114,21 @@ ros2 launch oomwoo_gazebo nav2.launch.py map:=/path/to/your/map.yaml
 | `multi_room.sdf`  | Connected rooms with doorways  |
 | `narrow_passage.sdf` | Corridor with bottleneck    |
 
+## Fixes Applied During Testing
+
+| Issue | Fix |
+|-------|-----|
+| `param_bridge` executable not found | Renamed to `parameter_bridge` in both launch files |
+| `/world/<name>/create` service missing | Added `gz-sim-user-commands-system` plugin to all SDF worlds |
+| Robot couldn't be spawned without `-world` flag | Added `-world living_room` argument to `create` call |
+| `collision_monitor` crashed on startup | Added `collision_monitor` section with proper polygon config |
+| `docking_server` needed charging dock plugins | Added `docking_server` section with `SimpleChargingDock` |
+| SDF `box size="..."` attribute syntax deprecated | Changed to nested `<box><size>...</size></box>` in all worlds |
+| `fuel.gazebosim.org` remote model references | Replaced with self-contained light + ground_plane models |
+
 ## Dependencies
 
-- ROS2 Jazzy / Humble
+- ROS2 Jazzy
 - Gazebo Harmonic (gz-sim8)
 - `nav2_bringup`, `slam_toolbox`, `ros_gz_sim`, `ros_gz_bridge`, `teleop_twist_keyboard`
 
