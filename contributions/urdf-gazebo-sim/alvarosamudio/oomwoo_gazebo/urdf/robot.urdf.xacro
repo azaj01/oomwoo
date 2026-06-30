@@ -79,7 +79,7 @@
     <child link="wheel_left_link"/>
     <origin xyz="0 ${wheel_base/2} ${wheel_diameter/2 - floor_clearance}" rpy="-${pi/2} 0 0"/>
     <axis xyz="0 0 1"/>
-    <limit effort="${motor_stall_torque}"/>
+    <limit effort="${motor_stall_torque}" velocity="1.0"/>
   </joint>
 
   <link name="wheel_left_link">
@@ -102,7 +102,7 @@
     <child link="wheel_right_link"/>
     <origin xyz="0 ${-wheel_base/2} ${wheel_diameter/2 - floor_clearance}" rpy="-${pi/2} 0 0"/>
     <axis xyz="0 0 1"/>
-    <limit effort="${motor_stall_torque}"/>
+    <limit effort="${motor_stall_torque}" velocity="1.0"/>
   </joint>
 
   <link name="wheel_right_link">
