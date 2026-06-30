@@ -7,7 +7,7 @@ ROS2 package with URDF, Gazebo simulation, and bumper sensor for the oomwoo robo
 ## Package Structure
 
 ```
-oomwoo_description/
+oomwoo_gazebo/
 ├── urdf/                   # Xacro URDF files
 │   ├── params.xacro        # Robot dimensions and physics
 │   ├── robot.urdf.xacro    # Main robot description
@@ -25,7 +25,7 @@ oomwoo_description/
 │   ├── slam.launch.py
 │   ├── nav2.launch.py
 │   └── teleop.launch.py
-├── oomwoo_description/     # Python nodes
+├── oomwoo_gazebo/     # Python nodes
 │   ├── __init__.py
 │   └── bump_recovery.py
 ├── rviz/
@@ -88,44 +88,44 @@ The Python node `bump_recovery.py` subscribes to the bumper topics and:
 
 ```bash
 cd /ros_ws/src
-ln -s /path/to/oomwoo/contributions/urdf-gazebo-sim/alvarosamudio/oomwoo_description .
+ln -s /path/to/oomwoo/contributions/urdf-gazebo-sim/alvarosamudio/oomwoo_gazebo .
 cd /ros_ws
-colcon build --packages-select oomwoo_description
+colcon build --packages-select oomwoo_gazebo
 source install/setup.bash
 ```
 
 ### Basic Simulation
 
 ```bash
-ros2 launch oomwoo_description sim.launch.py
+ros2 launch oomwoo_gazebo sim.launch.py
 # Use a different world (default is living_room.sdf):
-ros2 launch oomwoo_description sim.launch.py world:=/path/to/kitchen.sdf
+ros2 launch oomwoo_gazebo sim.launch.py world:=/path/to/kitchen.sdf
 ```
 
 ### SLAM
 
 ```bash
 # In a running simulation:
-ros2 launch oomwoo_description slam.launch.py
+ros2 launch oomwoo_gazebo slam.launch.py
 ```
 
 ### Navigation
 
 ```bash
 # Provide a pre-built map:
-ros2 launch oomwoo_description nav2.launch.py map:=/path/to/map.yaml
+ros2 launch oomwoo_gazebo nav2.launch.py map:=/path/to/map.yaml
 ```
 
 ### Manual Control
 
 ```bash
-ros2 launch oomwoo_description teleop.launch.py
+ros2 launch oomwoo_gazebo teleop.launch.py
 ```
 
 ### Test Bumper
 
 ```bash
-ros2 launch oomwoo_description bumper_test.launch.py
+ros2 launch oomwoo_gazebo bumper_test.launch.py
 # In another terminal:
 ros2 topic echo /bumper_left
 ros2 topic echo /bumper_right
@@ -134,9 +134,9 @@ ros2 topic echo /bumper_right
 ### Automatic Recovery
 
 ```bash
-ros2 launch oomwoo_description sim.launch.py
+ros2 launch oomwoo_gazebo sim.launch.py
 # In another terminal:
-ros2 run oomwoo_description bump_recovery.py
+ros2 run oomwoo_gazebo bump_recovery.py
 # Drive the robot into a wall and watch it back up and turn autonomously
 ```
 
