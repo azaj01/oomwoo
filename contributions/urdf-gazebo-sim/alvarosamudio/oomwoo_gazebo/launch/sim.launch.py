@@ -30,7 +30,7 @@ def generate_launch_description():
 
     bridge = Node(
         package="ros_gz_bridge",
-        executable="param_bridge",
+        executable="parameter_bridge",
         parameters=[os.path.join(pkg, "config", "gz_bridge.yaml")],
         output="screen",
     )
