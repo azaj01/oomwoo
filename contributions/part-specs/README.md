@@ -57,7 +57,7 @@ background needed — a multimeter, patience, and (for reverse-engineering) an o
 
 If a spec isn't published, reverse-engineer it by opening an existing vacuum and probing.
 **Safety first:**
-- Don't do it unless you're qualified, experienced
+- Don't do it unless you're qualified, experienced.
 - Opening a vacuum usually **voids the warranty** and **can damage it** — accept that risk knowingly.
 - **Secure / prop up the vacuum** so it can't scoot off the table or bench when the wheels or
   fan spin during testing (clamp it, or raise the wheels off the surface).
@@ -66,6 +66,11 @@ If a spec isn't published, reverse-engineer it by opening an existing vacuum and
 - Any **mains-connected** testing (e.g. a dock) — extra caution; isolate.
 - Use a **multimeter + oscilloscope** to capture voltages, currents, and waveforms; trace and
   **label connector pinouts**; photograph everything.
+
+**Legal:**
+- By performing any work for this project including reverse engineering you agree to
+  - wave liability, indemnify this project, the legal entity behind it (Remake AI Statutory Trust) and and its founder
+  - contribute your work and results thereof, if any, as open-source, to be published under Apache 2.0 license
 
 ## Submit
 
