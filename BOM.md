@@ -26,9 +26,9 @@ Retail / low-qty prices, INCLUDES shipping, excludes tax.
 |---|---|---|---|---|
 | Drive wheel assembly pair | 1 | $24-$33 | Motor + encoder + suspension + tire + cables + wheel-drop sensors | Roborock S4/5/45/50/51/52/55 Max, S7/Pro/MaxV, E4/E5/45/50/55, G10, T7S/S+, S6/60/65 Pure/MaxV, S70/75, Q5/7 [search AliExpress](https://www.aliexpress.us/w/wholesale-roborock-s5-maxv-wheels.html) |
 | Caster wheel | 1 | $2.50-$5 | Push-in | iRobot Roomba I3/4/6/8, J7/Plus J7 E5/6 500 600 700 800 900 [search AliExpress](https://www.aliexpress.us/w/wholesale-roomba-caster.html) |
-| Suction fan | 1 | $10–23 | 6 kPa option | Dreame MSD-C-3, Nidec 20N709U020; Dreame L10s Prime/Ultra/Pro, D10s Plus, X10+/20+ [search AliExpress](https://www.aliexpress.us/w/wholesale-Dreame-L10s-fan.html) |
-|             |   | $17–28 | 5.1-6 kPa option | Nidec 22N704W150, 20N704S980, 20N704S980, 20N704R980L; Roborock S8 Pro Ultra/G20/ S7 MaxV/Q7 Max /Q7 Max+/Q7Max Plus/S8/S8+ /S8 Plus [search AliExpress](https://www.aliexpress.us/w/wholesale-roborock-s8-pro-fan.html) |
-|             |   | $12–24 | 10 kPa option | Roborock BL24131616; Nidec 22N704V160; Roborock G20S, S8 MaxV Ultra [search AliExpress](https://www.aliexpress.us/w/wholesale-roborock-g20s-fan.html) |
+| Suction fan | 1 | $10–23 | 6 kPa option | Dreame MSD-C-3, Nidec 20N709U020; fits Dreame L10s Prime/Pro, **L10s Ultra Gen 1** (5.3 kPa — Gen 2 is 10 kPa!), D10s Plus, X10+ (6 kPa); X20+ ⚠️verify (~7 kPa?) [search AliExpress](https://www.aliexpress.us/w/wholesale-Dreame-L10s-fan.html) |
+|             |   | $17–28 | 5.1-6 kPa option | Nidec 22N704W150, 20N704S980, 20N704R980L; fits Roborock S8 Pro Ultra, S7 MaxV (5.1 kPa), S8/S8+/S8 Plus (6 kPa); G20 ⚠️verify. **Q7 Max/Max+ excluded — they're 4.2 kPa, not 5-6.** [search AliExpress](https://www.aliexpress.us/w/wholesale-roborock-s8-pro-fan.html) |
+|             |   | $12–24 | 10 kPa option | Roborock BL24131616; Nidec 22N704V160; fits Roborock S8 MaxV Ultra (10 kPa); G20S ⚠️verify [search AliExpress](https://www.aliexpress.us/w/wholesale-roborock-g20s-fan.html) |
 |             |   | $34–45 | 36 kPa option | Roborock Saros 20 [search AliExpress](https://www.aliexpress.us/w/wholesale-Roborock-Saros-20-fan.html) |
 |             |   | $12–25 | 2-2.5 kPa option | Nidec 20N704P200, 20N704R500, 20N704R310, 20N704P160; Xiaomi Roborock S50 S51 S55 S60 S61 S65 S5 MAX S6 E25 E35, S5, S6 Pure [search AliExpress](https://www.aliexpress.us/w/wholesale-roborock-s5-fan.html) |
 | Main brush + motor | 1 | 5–12 | tapered rubber anti-tangle roller | |
@@ -50,6 +50,11 @@ Retail / low-qty prices, INCLUDES shipping, excludes tax.
 | Printed parts (filament) | — | 5–15 | you print these yourself | |
 | **Robot subtotal (sourced parts)** | | **~$130–270** | excludes SBC | |
 | Raspberry Pi 5 (4 GB) | 1 | ~60 | the SBC | |
+
+> **⚠️ Fan sourcing caveat:** the **kPa is the fan's own rating** — verify it against the fan's
+> model number / datasheet. The vacuum models are a **sourcing search aid only**: a fan listed
+> as "fits vacuum X" is *not* necessarily X's original fan (lower-power replacements are sold as
+> compatible for higher-suction models). Omit any model whose known suction contradicts the row.
 
 ## Dock (by tier)
 
