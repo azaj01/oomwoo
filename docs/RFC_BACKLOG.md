@@ -27,7 +27,6 @@ The motor-driver / power PCB and battery charging are now the active
 |---|---|---|---|
 | Chassis / base frame (reference) | `hw-chassis` | MVP | Integration backbone; defines the mechanical interface. Maintainer-owned. |
 | Drive-wheel mounts (L/R) | `hw-wheel-mount` | MVP | Mount + suspension around the sourced wheel modules. |
-| Caster / universal wheel mount | `hw-caster` | MVP | Passive support wheel. |
 | Compute mount (RPi 5) | `hw-compute-mount` | MVP | Mount + airflow for the Pi 5. |
 | LiDAR mount | `hw-lidar-mount` | MVP | Centered turret; parametric for other models. |
 | Main brush assembly | `hw-main-brush` | MVP | *Tapered rubber anti-tangle roller* + drive. |
@@ -37,8 +36,9 @@ The motor-driver / power PCB and battery charging are now the active
 | Wiring harness | `hw-harness` | MVP | Connector pinouts per [io-pcb](../contributions/io-pcb) + [part-specs](../contributions/part-specs). |
 | Side brush | `hw-side-brush` | P2 | Edge cleaning. |
 | Mop module (dual-spinning) | `hw-mop` | P2 | 3D-printed *dual-spinning* pads; skip the self-washing roller. |
-| Wheel-drop sensors | `hw-wheel-drop` | P2 | Lift detection. |
-| Charging dock (basic) | `hw-dock` | P2 | *Safety.* Contacts + alignment. |
+| Charging dock (basic) | `hw-dock` | MVP | *Safety.* Contacts + alignment. |
+| Charging dock (auto-empty) | `hw-dock` | P2 | |
+| Charging dock (mop wash/dry) | `hw-dock` | P2 | |
 
 ## Planned software (later phase)
 
