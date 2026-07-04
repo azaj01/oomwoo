@@ -36,12 +36,12 @@ Retail / low-qty prices, INCLUDES shipping, excludes tax.
 |            |   | $20-$30 | Anti-tangle hair-cutting dual roller, rubber and bristles | Fits Dreame L40s Ultra, L40 Ultra, X40, X40 Ultra, X30 Ultra, L30 Ultra, L20 Ultra, L10s Ultra/Ultra Gen 2/Pro Ultra, S10 Pro, S20, S20 Pro/Pro Plus, X10, X10+, X20 Pro, D9 Max Gen2; Mova E30 Ultra, S10 Plus, P10 Pro Ultra; Xiaomi S10+, X20 Pro, X10+, Mijia M30S/M40 [search AliExpress](https://www.aliexpress.us/w/wholesale-dreame-tricut-brush.html) |
 |            |   | $7-$10 | Anti-tangle tapered dual roller, rubber and bristles | Fits Dreame X60 Max, X50 Ultra/Master/Pro Ultra, L40S Pro Ultra/Ultra; MOVA V50 Ultra [search AliExpress](https://www.aliexpress.us/w/wholesale-dreame-x50-ultra-main-brush.html) |
 |            |   | $7-$10 | Anti-tangle dual roller, rubber only + rubber and bristles options| Fits Roborock Roborock S8, S8+/Pro Ultra, Q5 Pro/Pro+, Q8 Max/Max+, G20 [search AliExpress](https://www.aliexpress.us/w/wholesale-Roborock-Q8-Max-main-brush.html) |
+| Battery pack + BMS | 1 | $16–30 | OEM BRR-2P4S-5200, 4S2P-MMBK P2150-4S2P-XWDLS; 14.4V Li-ion, ~5200 mAh / 75 Wh in-pack BMS. | Fits Xiaomi Mijia 1/1S/1C/1T/G1, Roborock S4/S5/S5 Max/S6/S6 Pure/MaxV/S7/S7 MaxV, Q5/Q7 Max, T4/T6/T7/T60/T65, Xiaowa E20/E25/E35, C10 [search AliExpress](https://www.aliexpress.us/w/wholesale-BRR-2P4S-5200-battery.html) 4-pin connector B+, B−, NTC, sense (TODO verify). Safety review narrows to: 16.8 V CC/CV charge + NTC temp sense. |
 | Main brush motor, gearbox | 1 | TBD | TBD | |
 | Side brush + motor | 1–2 | 3–8 | fixed (extendable is later) | |
 | Mop spin motor(s) + pads | 1–2 | 6–15 | mopping models only | |
 | Water pump + valve + tubing | 1 | 4–10 | mopping models only | |
 | Mop lift servo | 1 | 2–6 | mopping models only | |
-| Battery pack (~14.8 V Li-ion) + BMS | 1 | 15–30 | *safety review* | |
 | LiDAR (3irobotix CRL-200S / LDS) | 1 | 30–40 | | |
 | VL53L7CX multizone ToF | 1 | 8–15 | obstacle detection (90° FoV) | |
 | Color camera | 1 | 5–15 | connects to the SBC | |
