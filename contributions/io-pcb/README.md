@@ -10,7 +10,7 @@ micro-ROS and talks to the Raspberry Pi 5 SBC over a serial / USB link.
 > Rockchip SoC and its whole subsystem are *removed*; only the STM32 I/O side is kept and
 > converted to KiCad for review.
 
-# Important references
+# References
 
 - *Starting-point schematic (PDF)* —
   [makerspet/oomwoo-io-board](https://github.com/makerspet/oomwoo-io-board/blob/main/oomwoo-io-board-RK3562-schematic.pdf).
@@ -62,6 +62,7 @@ updated for OOMWOO, then *hold for review before PCB layout*.
   any cell-count-dependent dividers / thresholds to *4S*.
 - *Wire the drive-wheel connectors* to the JST PH2.0 6-pin pinout above (verified against the
   sourced module).
+- assume battery Xiaomi/Roborock/Dreame BRR-2P4S-5200
 - *Convert the kept design to KiCad* (from Altium); keep a clean, readable, hierarchical schematic.
 - *Hold here for review.* Deliver the trimmed, 4S, KiCad *schematic* and stop — the maintainer
   reviews before anyone starts PCB layout / manufacturing.
@@ -76,7 +77,7 @@ updated for OOMWOO, then *hold for review before PCB layout*.
   PHY, MIPI camera) and the *WiFi / BT module* are removed.
 - The *kept blocks* (STM32G070, motor drivers, sensor front-ends, battery charging, audio,
   buttons / LEDs, SBC link) are present, correct, and complete in *KiCad*.
-- Battery is *4S (~14.8 V)* with a matching charger + protection.
+- Battery as specified
 - Drive-wheel connectors match the referenced pinout (JST PH2.0 6-pin), reconciled with part-specs.
 - Delivered as a buildable *KiCad project*; *ERC clean*; a sub-BoM and short design notes included.
 - Stops at the reviewed *schematic* — no PCB layout yet.
