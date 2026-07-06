@@ -18,7 +18,7 @@ color camera + an NPU accelerator).
 
 ## Robot BoM (work in progress)
 
-Retail / low-qty prices, INCLUDES shipping, excludes tax.
+Retail / low-qty prices, INCLUDES shipping, excludes tax. Read [how I calculate BoM costs](#how-i-calculate-costs).
 
 | Item | Qty | ~USD | Notes | Source |
 |---|---|---|---|---|
@@ -82,3 +82,38 @@ Three dock tiers share one robot base, released in order:
   builders can buy cheap universal replacements anywhere.
 - Per-module sourcing details will land in the relevant
   [contributions/](contributions) RFCs as they mature.
+
+## How I calculate BoM costs
+
+Prices for vacuum cleaner aftermarket parts have a wide spread (3x max/min as a ballpark).
+You can buy same part for, say, $15 or $30 or even $45.
+
+Therefore, if you search [AliExpress](https://www.aliexpress.us/w/wholesale-roborock-s5-lidar.html)/eBay/Amazon
+for, say, "Roborock S5 LiDAR", you will likely see offers around $30.
+
+There will probably several pages worth of those offers. And if you dig through those pages, you will probably start
+finding parts for $25.
+
+If you are shopping on AliExpress, open a part listing and check for free coupon offers like "$2.00 off on $18.00".
+That brings your $25 price down to $23. Also, check the fine print in red font saying something like "$21.43 each, ≥ 3 pieces".
+
+That's not the end of it. The next AliExpress trick is to wait for seasonal sales and promotions. Those happen relatively often.
+Sales and promotions can bring prices down even futher.
+
+How can you get to the rock-bottom $15 price? Aftermarket parts prices depend on your search keywords.
+Try searching for multiple keyword variations: "Roborock S5 LDS", "Roborock S5 LiDAR", "original laser distance lds",
+"LDS02RR", "LDS02RR LiDAR", "Roborock LDS02RR", "LDS laser sensor for xiaomi Roborock" and so on. Be creative and persistent.
+Try searching Google "site:aliexpress.com lds02rr" and other variations. Be creative and persistent.
+
+Combining all these methods is how you can get the rock bottom $15 price.
+
+I record two prices for each part in the BoM table, for example "$15-$25".
+The first ($15) price is the rock bottom one that often requires a minimum purchase of 3 pieces.
+The second ($25) price is what you can realistically get when purchasing 1 piece, *applying coupons* and doing *a few minutes of search*.
+
+Why record the first price if requires a 3 pcs minimum? This is because I intend to assemble a convenient parts kit - and make it available to everyone.
+
+Hunting dozens of parts on AliExpress/Amazon/eBay can take be onerous. AliExpress shipping from China add a couple weeks more.
+
+Getting an all-in-one kit, quickly shipped from the US, with parts that I've shopped, pre-screened/pre-tested for you - that's what I'd like to make.
+I would be purchasing parts for that "first" small quantity ($15) price. This is why I record that price.
